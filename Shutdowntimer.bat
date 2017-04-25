@@ -10,12 +10,11 @@ echo #####################
 
 echo How long?
 
-set /p min=time in minutes:
+set /p min=Time in minutes:
 
 set /a zeit = %min%*60
 
-echo shutdown in %min% minutes
-
+echo The PC is shut down in %min% minute/s 
 pause
 
 shutdown.exe -s -t %zeit% -f
